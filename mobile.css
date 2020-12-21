@@ -1,0 +1,319 @@
+/* responsive navbar */
+
+@media screen and (max-width: 500px) {
+  nav {
+    position: relative;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+    font-size: 40px;
+    color: #fff;
+    z-index: -1;
+  }
+  .menu:hover {
+    color: #333;
+  }
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .sidenav a {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+
+/*Responsive Screen */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* navbar */
+  nav {
+    height: 5vh;
+    width: 80%;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    transform: translate(-2%, -2%);
+  }
+
+  /* Menu */
+  nav .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: 3;
+  }
+  /* hamburger lines */
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  /* home -Section  */
+  .intro-hero {
+    height: 300px;
+    width: 600px;
+  }
+  .hero-heading {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-top: 50px;
+  }
+
+  .intro-hero p {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: 20px;
+  }
+  /* About Section */
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-40%, -50%);
+    width: 60%;
+    height: 70%;
+  }
+  .card img {
+    height: 500px;
+  }
+  .about-headings {
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-70%, -50%);
+    width: 60%;
+    height: 70%;
+  }
+  /* footer */
+  .foot-container {
+    position: fixed;
+    width: 100%;
+    color: #f4f4f4;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 0;
+  }
+}
+/* Mobile display */
+@media screen and (max-width: 500px) {
+  body {
+    height: 100vh;
+    width: 100%;
+  }
+  .logo img {
+    position: fixed;
+    top: 0%;
+    left: 3%;
+    transform: translate(-3%, 0%);
+    width: 80px;
+    height: 80px;
+  }
+  /* navbar */
+  nav {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    transform: translate(-5%, -5%);
+  }
+  .links .link a {
+    display: none;
+  }
+
+  /* Menu */
+  nav .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+  /* hamburger lines */
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+  .line:hover {
+    background-color: teal;
+  }
+  /* home -Section  */
+  .intro-hero {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
+    height: 200px;
+    width: 350px;
+
+    /* glassmorphism*/
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border: solid 1px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+  }
+  .hero-heading {
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 50px;
+  }
+
+  .intro-hero p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: 20px;
+  }
+  /* button link to about page */
+  .about-me {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background: #111;
+    margin-top: 20px;
+  }
+  /* About Section */
+  .about-bg {
+    overflow-y: scroll;
+  }
+  .card {
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    transform: translate(-25%, -25%);
+    width: 80%;
+    font-weight: 300;
+    letter-spacing: 3px;
+    overflow-y: scroll;
+    z-index: 3;
+  }
+  .card img {
+    height: 300px;
+  }
+  .about-headings {
+    height: 700px;
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    transform: translate(-1%, -25%);
+    width: 80%;
+    height: 70%;
+    z-index: 2;
+    overflow-y: scroll;
+  }
+  /* footer */
+  .foot-container {
+    position: fixed;
+    width: 100%;
+    color: #f4f4f4;
+    bottom: 0%;
+    left: 0;
+    transform: translate(0%, 0%);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    z-index: 0;
+  }
+  .foot-container p {
+    padding-top: 10px;
+  }
+}
+
+/* Landscape mode */
+
+@media screen and (min-width: 778px) and (max-width: 812px) {
+  body {
+    height: 100%;
+    overflow-y: scroll;
+  }
+  nav .links .link {
+    font-size: 16px;
+  }
+  .intro-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f4f4f4;
+    text-align: center;
+    height: 200px;
+    width: 500px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(40px);
+    border: solid 1px transparent;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 30px;
+    animation: mymove 0.5s ease;
+  }
+  .hero-heading {
+    font-size: 22px;
+    font-weight: 100;
+    margin-top: 50px;
+  }
+
+  .intro-hero p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    margin-top: 20px;
+  }
+  .about-me {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    background: #111;
+    margin-top: 20px;
+  }
+  .about-me:hover {
+    opacity: 0.5;
+    transition: 0.5s ease;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #0173f5;
+  }
+}
